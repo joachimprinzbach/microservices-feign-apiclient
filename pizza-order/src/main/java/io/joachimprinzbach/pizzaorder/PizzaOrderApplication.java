@@ -38,7 +38,7 @@ class PizzaOrderRestController {
     @GetMapping(path = "api/pizza/orders")
     public Set<PizzaInventoryItem> getAvailablePizzaItems() {
         RestTemplate restTemplate = new RestTemplateBuilder().build();
-        PizzaInventoryItem[] inventoryItems = restTemplate.getForObject(pizzaInventoryServiceUrl, PizzaInventoryItem[].class);
+        PizzaInventoryItem[] inventoryItems = restTemplate.getForObject(pizzaInventoryServiceUrl + "/api/pizzas", PizzaInventoryItem[].class);
         log.info("Found " + inventoryItems.length + " items in inventory.");
         return new HashSet<>(Arrays.asList(inventoryItems));
     }
