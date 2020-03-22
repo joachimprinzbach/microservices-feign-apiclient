@@ -1,11 +1,9 @@
 package io.joachimprinzbach.pizzainventory;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import io.joachimprinzbach.pizzainventory.client.PizzaInventoryApi;
+import io.joachimprinzbach.pizzainventory.client.PizzaInventoryItem;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashSet;
@@ -23,23 +21,14 @@ public class PizzaInventoryApplication {
 }
 
 @RestController
-class PizzaInventoryRestController {
+class PizzaInventoryRestController implements PizzaInventoryApi {
 
-    @GetMapping(path = "api/pizza/items")
-    public Set<PizzaInventoryItem> getAvailablePizzaItems() {
+    @Override
+    public Set<PizzaInventoryItem> getPizzaInventoryItems() {
         return Stream
                 .of(
                         new PizzaInventoryItem("Salami", 10),
                         new PizzaInventoryItem("Funghi", 3))
                 .collect(Collectors.toCollection(HashSet::new));
     }
-}
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-class PizzaInventoryItem {
-
-    private String name;
-    private int quantity;
 }
