@@ -1,7 +1,7 @@
 package io.joachimprinzbach.pizzainventory;
 
-import io.joachimprinzbach.pizzainventory.client.PizzaInventoryApi;
-import io.joachimprinzbach.pizzainventory.client.PizzaInventoryItem;
+import io.joachimprinzbach2.pizzainventory.client.PizzaInventoryClient;
+import io.joachimprinzbach2.pizzainventory.client.PizzaInventoryItem;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,7 +21,7 @@ public class PizzaInventoryApplication {
 }
 
 @RestController
-class PizzaInventoryRestController implements PizzaInventoryApi {
+class PizzaInventoryRestController implements PizzaInventoryClient {
 
     @Override
     public Set<PizzaInventoryItem> getPizzaInventoryItems() {

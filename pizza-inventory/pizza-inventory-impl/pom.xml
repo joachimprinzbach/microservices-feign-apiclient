@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>pizza-inventory-api</artifactId>
+            <artifactId>pizza-inventory-client</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

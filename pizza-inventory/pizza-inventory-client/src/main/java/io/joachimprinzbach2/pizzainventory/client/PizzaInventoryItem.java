@@ -1,4 +1,4 @@
-package io.joachimprinzbach.pizzainventory.client;
+package io.joachimprinzbach2.pizzainventory.client;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

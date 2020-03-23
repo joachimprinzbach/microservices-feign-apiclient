@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+io.joachimprinzbach2.pizzainventory.client.PizzaInventoryClientConfiguration

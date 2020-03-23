@@ -13,7 +13,6 @@
     <artifactId>pizza-inventory</artifactId>
 
     <modules>
-        <module>pizza-inventory-api</module>
         <module>pizza-inventory-client</module>
         <module>pizza-inventory-impl</module>
     </modules>
