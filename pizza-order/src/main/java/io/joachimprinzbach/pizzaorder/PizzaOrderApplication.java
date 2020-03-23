@@ -1,7 +1,7 @@
 package io.joachimprinzbach.pizzaorder;
 
-import io.joachimprinzbach2.pizzainventory.client.PizzaInventoryClient;
-import io.joachimprinzbach2.pizzainventory.client.PizzaInventoryItem;
+import io.joachimprinzbach.pizzainventory.api.PizzaInventoryClient;
+import io.joachimprinzbach.pizzainventory.api.PizzaInventoryItem;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;

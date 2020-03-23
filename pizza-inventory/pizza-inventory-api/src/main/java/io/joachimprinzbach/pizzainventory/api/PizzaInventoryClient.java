@@ -1,4 +1,4 @@
-package io.joachimprinzbach2.pizzainventory.client;
+package io.joachimprinzbach.pizzainventory.api;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

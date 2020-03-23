@@ -1,7 +1,7 @@
 package io.joachimprinzbach.pizzainventory;
 
-import io.joachimprinzbach2.pizzainventory.client.PizzaInventoryClient;
-import io.joachimprinzbach2.pizzainventory.client.PizzaInventoryItem;
+import io.joachimprinzbach.pizzainventory.api.PizzaInventoryClient;
+import io.joachimprinzbach.pizzainventory.api.PizzaInventoryItem;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RestController;
