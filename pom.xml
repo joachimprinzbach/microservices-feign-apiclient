@@ -16,6 +16,7 @@
     <modules>
         <module>pizza-order</module>
         <module>pizza-inventory</module>
+        <module>microservice-starter-example</module>
     </modules>
 
     <properties>

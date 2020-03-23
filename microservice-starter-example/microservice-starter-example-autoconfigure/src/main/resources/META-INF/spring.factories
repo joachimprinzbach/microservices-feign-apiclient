@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+io.joachimprinzbach.microservice.starter.autoconfigure.MicroserviceLibAutoConfiguration
