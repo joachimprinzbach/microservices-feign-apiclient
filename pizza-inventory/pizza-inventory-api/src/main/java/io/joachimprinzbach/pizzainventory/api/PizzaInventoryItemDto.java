@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PizzaInventoryItem {
+public class PizzaInventoryItemDto {
 
     private String name;
     private int quantity;

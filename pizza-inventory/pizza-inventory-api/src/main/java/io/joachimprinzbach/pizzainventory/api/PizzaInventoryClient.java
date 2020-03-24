@@ -9,5 +9,5 @@ import java.util.Set;
 public interface PizzaInventoryClient {
 
     @GetMapping("/api/pizza/items")
-    Set<PizzaInventoryItem> getPizzaInventoryItems();
+    Set<PizzaInventoryItemDto> getPizzaInventoryItems();
 }
