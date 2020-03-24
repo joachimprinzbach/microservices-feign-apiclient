@@ -7,7 +7,7 @@ Use case for a MircoService REST API with a [client](./pizza-inventory/pizza-inv
 ### Pizza-Order
 The "WebAppliation" that provides a [Frontend](https://joachim-pizza-order-test.apps.origin.baloise.dev/) and a Backend for the Frontend with a REST API.
 
-The [REST-API]([client](./pizza-order/src/main/java/io/joachimprinzbach/pizzaorder/PizzaOrderRestController.java)) gets its data from a microservice called `pizza-inventory`. 
+The [REST-API Client](./pizza-order/src/main/java/io/joachimprinzbach/pizzaorder/PizzaOrderRestController.java)) gets its data from a microservice called `pizza-inventory`. 
 
 
 ### Pizza-Inventory
