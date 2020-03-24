@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.Set;
 
-@FeignClient(name = "pizza-inventory", url = "${pizza.inventory.url:http://pizza-inventory-service.pizza-inventory-${env}}/")
+@FeignClient(name = "pizza-inventory-service", url = "${pizza.inventory.url:http://pizza-inventory-service.pizza-inventory-${env}}/")
 @Api("Pizza Inventory API")
 public interface PizzaInventoryClient {
 
