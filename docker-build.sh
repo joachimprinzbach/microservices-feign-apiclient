@@ -1,3 +1,0 @@
-#!/bin/sh
-docker build pizza-inventory/pizza-inventory-impl -t joachimprinzbach/pizza-inventory:12
-docker build pizza-order -t joachimprinzbach/pizza-order:12
