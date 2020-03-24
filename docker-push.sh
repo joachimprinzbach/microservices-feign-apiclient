@@ -1,3 +1,3 @@
 #!/bin/sh
-docker push joachimprinzbach/pizza-inventory:8
-docker push joachimprinzbach/pizza-order:8
+docker push joachimprinzbach/pizza-inventory:9
+docker push joachimprinzbach/pizza-order:9
