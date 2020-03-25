@@ -6,7 +6,7 @@ Have a look at [the deployment configuration](https://github.com/joachimprinzbac
 ## Modules
 
 ### Pizza-Order
-The "WebAppliation" that provides a [Frontend](https://joachim-pizza-order-test.apps.origin.baloise.dev/) and a Backend for the Frontend with a REST API.
+The "WebAppliation" that provides a [Frontend](https://joachim-pizza-order-prod.apps.origin.baloise.dev/) and a Backend for the Frontend with a REST API.
 
 The [REST-API Client](./pizza-order/src/main/java/io/joachimprinzbach/pizzaorder/PizzaOrderRestController.java)) gets its data from a microservice called `pizza-inventory`. 
 
@@ -18,4 +18,10 @@ Besides the API, a [Client Stub](./pizza-inventory/pizza-inventory-api/src/main/
 
 The service environment is derived from the current env of the consumer, but can be overriden by setting a property.  
 
-You can access the Service "UI" with a link to the OpenApi Spec [here](https://joachim-pizza-inventory-test.apps.origin.baloise.dev/).
+You can access the Service "UI" with a link to the OpenApi Spec [here](https://joachim-pizza-inventory-prod.apps.origin.baloise.dev/).
+
+## Run locally
+Run `mvn clean install`
+
+Then run both, the pizza-inventory-impl and the pizza-order with the active profile `dev`.
+Open http://localhost:8080/ and http://localhost:8081/ in your webbrowser.

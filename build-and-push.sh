@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION=13
+VERSION=14
 DOCKER_ORG=joachimprinzbach
 mvn clean install
 docker build pizza-inventory/pizza-inventory-impl -t $DOCKER_ORG/pizza-inventory:$VERSION
